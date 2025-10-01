@@ -1,0 +1,14 @@
+#include <iostream>
+
+
+int n=0;
+int main() {
+	while(n<10){
+   std::cout << "n: " << n<< std::endl;
+		n++;
+
+
+}	return 0;
+}
+
+
