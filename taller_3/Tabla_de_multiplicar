@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int  R,Num;
+	int n=1;
+	
+		printf("Escriba el valor para la tabla de multiplicar ");
+		scanf("%d",&Num);
+		
+	while(1){
+		
+				R=Num*n;
+		printf("%d x %d :%d\n",Num,n,R);
+
+		n++;
+		
+		if(n==11){
+			break;
+		}
+		
+		
+	}
+}
