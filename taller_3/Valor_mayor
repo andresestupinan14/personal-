@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int N1,N2;
+	
+		printf("Escriba el primer numero ");
+		scanf("%d",&N1);
+		printf("Escriba el segundo numero ");
+		scanf("%d",&N2);
+		
+	if (N1<N2){
+		printf("El numero mayor es: %d",N2);
+		
+		} else if (N2<N1){
+			printf("El numero mayor es: %d",N1);
+		
+				} else {
+					printf("Los valores ingresados son iguales");
+		
+			}
+	return 0;
+}
