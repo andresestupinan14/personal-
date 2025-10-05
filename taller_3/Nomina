@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int horas;
+	float precio_h,sueldo_b,retencion,sueldo_n;
+	char nombre[30];
+	printf("escriba el nombre del trabajador");
+	scanf("%[^]", &nombre);
+	fflush(stdin);
+	printf("escriba el pago por hora");
+	scanf("%f",&precio_h);
+	printf("escriba el numero de horas");
+	scanf("%d",&horas);
+	sueldo_b= horas * precio_h;
+	retencion= sueldo_b*5/100;
+	sueldo_n=sueldo_b - retencion;
+	
+	printf("el sueldo bruto es %f\n",sueldo_b);
+	printf("el valor de la retencion es %f\n",retencion);
+	printf("el sueldo neto es %f",sueldo_n);
+	getch();
+
+}
