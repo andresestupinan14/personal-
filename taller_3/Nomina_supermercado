@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int unidad;
+	float precio, total;
+	char producto[40];
+	
+	printf("escriba el nombre del producto");
+	scanf("%s",&producto);
+	
+	printf("escriba el valor del producto");
+	scanf("%f",&precio);
+	
+	printf("escriba el numero de unidades");
+	scanf("%d",unidad);
+	
+	total= precio*unidad;
+	
+	printf("el valor total %f",total);
+	printf("producto: %s",producto);
+	printf("numero de productos: %d",unidad);
+
+	return 0;
+}
