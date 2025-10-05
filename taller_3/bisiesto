@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int bisiesto;
+	printf("escriba el nunmero del año");
+	scanf("%d",&bisiesto);
+
+	if ((bisiesto % 4 ==0 && bisiesto % 100 !=0 )||(bisiesto % 400 == 0)){
+		printf("el año es bisiesto");
+	} else {
+		printf("el año no es bisiesto");
+	}
+
+	return 0;
+}
