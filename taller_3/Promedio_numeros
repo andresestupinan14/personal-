@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+float cuenta,numero,suma,promedio;
+suma=0;
+cuenta=0;
+	printf("ingrese numeros positivos (finalice con un negativo)");
+		scanf("%f",&numero);
+	do{
+		suma=suma+numero;
+		cuenta++;
+		scanf("%f",&numero);
+		}while(numero>0);
+	
+	if (cuenta>0){
+		promedio=suma/cuenta;
+		printf("promedio es %f.2",promedio);
+		}else{
+			printf("no se ingresaron numeros positivos");
+		}
+
+return 0;
+}
