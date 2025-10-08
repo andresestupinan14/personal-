@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){ 
+int n,m,contador,i;
+
+	printf("ingrese el primer numero ");
+	scanf("%d",&m);
+	
+	printf("ingrese el segundo numero ");
+	scanf("%d",&n);
+	
+	if(m<=n){
+		printf("el primer numero debe ser mayor ");
+		
+	} else{
+		contador=0;
+		for(i=n; i<=m;i++){
+			if(i%2==0){	
+			printf("%d ",i);
+			contador++;
+			if (contador==3){
+		break;
+			}
+		
+		
+		}
+		
+
+	}	if(contador<3){
+		printf("no hay tres numeros pares ");
+	}}
+	
+
+	return 0;
+	}
+	
+	
