@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int intento,contador,numero;
+	numero=rand()% 10+1;
+	contador=0;
+	while(numero != intento) {	
+		contador++;
+		printf("adivine el numero");
+		scanf("%d",&intento);
+	
+		} 
+	
+	printf("numero correcto %d\n",numero);
+	printf("numero de intentos %d",contador);
+	
+	return 0;
+}
