@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(){
+	char usuario [10];
+	char contrasena [10];
+	char correcta[10]="pasword";
+	char user[10]="user";
+	int intentos=0, max_intentos=3;
+	
+	while(intentos<max_intentos){
+		printf("Escriba el usuario\n");
+		scanf("%s",usuario);
+		printf("Esriba la contraseña\n");
+		scanf("%s",contrasena);
+
+		if(strcmp(contrasena,correcta)==0&&strcmp(contrasena,correcta)==0) {
+			printf("acceso permitido");
+			
+			return 0;
+		}else {
+			printf("lo siento usuario o contraseña incorrecto\n");
+		}
+			intentos++;
+
+	}
+		printf("numero de intentos superado");	
+	
+	return 0;
+}
