@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+ 
+int main(){
+	int A, B, C;
+	printf("Escriba el primer numero: \n");
+	scanf("%d",&A);
+	printf("Escriba el segundo numero: \n");
+	scanf("%d",&B);
+	printf("Escriba el tercer numero: \n");
+	scanf("%d",&C);
+	
+	if((A>B&&B>C)||(A<B&&B<C)){
+		printf("El numero del medio es %d",B);
+	} else if ((B>C&&C>A)||(B<C&&C<A)){
+		printf("El numero del medio es %d",C);	
+	}else if((C>A&&A>B)||(C<A&&A<B)){
+		printf("El numero del medio es %d",A);
+	} else {
+		printf("Dos numeros ingresados son iguales");
+	}
+	
+	
+	
+	return 0;
+}
