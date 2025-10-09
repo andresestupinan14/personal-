@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+ int main(){
+ 	int cuadrado,suma,cuenta=1;
+ 	 
+ 	 while (cuenta<100){
+ 	 	cuadrado=cuenta*cuenta;
+ 	 	suma+=cuadrado;
+ 	 	printf("%d %d \n",cuenta,cuadrado);	
+		cuenta++;
+	  }
+ 			printf("%d \n",suma);
+ 	return 0;
+ }
