@@ -4,7 +4,7 @@
  int main(){
  	int cuadrado,suma,cuenta=1;
  	 
- 	 while (cuenta<100){
+ 	 while (cuenta<101){
  	 	cuadrado=cuenta*cuenta;
  	 	suma+=cuadrado;
  	 	printf("%d %d \n",cuenta,cuadrado);	
