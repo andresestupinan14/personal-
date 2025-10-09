@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+ int main(){
+		int A, B, C, S;
+			
+			printf("Escriba el primer valor \n");
+			scanf("%d",&A);
+			printf("Escriba el segundo valor \n");
+			scanf("%d",&B);
+			printf("Escriba el tercer valor \n");
+			scanf("%d",&C);
+			
+			if(A+B==C){
+				printf("La suma de %d mas %d es igual a %d ",A,B,C);
+			}else if(B+C==A){
+				printf("La suma de %d mas %d es igual a %d ",B,C,A);
+			}else if(A+C==B){
+				printf("La suma de %d mas %d es igual a %d ",A,C,B);
+			}else {
+				printf("La suma de dos numeros no es como resultando el tercero.");
+			}
+	
+
+ 	return 0;
+ }
