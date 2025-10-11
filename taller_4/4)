@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int i,cont;
+	char resp;
+
+	for(cont=1;cont<=100;cont++){
+	i++;
+	 printf("%d ",i);
+		while(cont==20){
+		 printf("\nContinuar S/N \n");
+		 scanf(" %c",&resp);
+		if (resp == 's')
+		{
+		cont=0;
+	
+		} else if(resp=='n'){
+			printf("el programa a finalizado ");
+		return 0;
+		}
+	}
+		 
+		 }
+		
+	
+			
+}
