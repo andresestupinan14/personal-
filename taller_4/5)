@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	int sum,con,N1;
+	float prom;
+	sum=0;
+	con=0;
+
+ do   {	
+	printf("ingrese un numero (con 0 termina)\n");
+		scanf("%d",&N1);
+	if(N1 != 0){
+		sum+=N1;
+		con++;
+	}
+	
+		
+		
+	}	while(N1 != 0);
+	if(con>0){
+		prom=(float)sum/con;
+
+		printf("la media es %f ",prom);
+	}
+	
+	
+return 0;
+	
+	
+}
