@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	int sumaP=0, sumaI=0, conteoP=0, conteoI=0, mediaI,mediaP,i;
+	for(i=1;i<=200;i++){
+		if(i%2 ==0){
+			sumaP=sumaP+i;
+			conteoP++;
+		}	
+			else {
+				sumaI=sumaI+i;
+				conteoI++;	
+			}
+	}
+	
+	mediaI=sumaI/conteoI;
+	mediaP=sumaP/conteoI;
+	
+	printf("la suma de los pares es %d \n",sumaP);
+	printf("la media de los pares es %d \n",mediaP);
+	printf("la suma de los impares es %d \n",sumaI);
+	printf("la media de los impares es %d \n",mediaI);
+	
+return 0;
+	
+	
+}
