@@ -2,14 +2,30 @@
 #include <stdlib.h>
  
  int main(){
- 	int num;
- 	
- 	printf("escriba");
+ 	int A, B, C, S = 0, n, i, num, cont = 0, l=0;
+ 	int v=1;
+    int sumaP = 0, sumaI = 0, conteoP = 0, conteoI = 0;
+    int mediaI, mediaP, cuadrado, cuenta = 1;
+    float prom;
+	char resp;
+	
+	do{
+	
+ 	printf("\n	Escriba el algoritmo que requiere \n ");
+ 		printf("1 Valor del centro\n ");
+ 			printf("2 Suma de dos numeros como redultado un tercero \n ");
+ 				printf("3 Serie de fibonnacci\n ");
+ 					printf("4 Numeros del 1 al 1000 (mostrados de 20 a 20)\n ");
+ 						printf("5 Media de numeros \n ");
+ 							printf("6 Suma y Media de numeros pares e imapres \n ");
+ 								printf("7 cuadrado de los primeros 100 numeros enteros\n ");
+ 									printf("8 Programa para identificar numeros negativos \n ");
+ 										printf("9 para finalizar\n ");
  	scanf("%d",&num);
  	
  	switch (num){
  		case 1:
- 			int A, B, C;
+ 	
 			printf("Escriba el primer numero: \n");
 			scanf("%d",&A);
 			printf("Escriba el segundo numero: \n");
@@ -32,48 +48,148 @@
 			break;
  			
  		case 2:	
- 		
-			int A1, B1, C1, S1;
 			
 			printf("Escriba el primer valor \n");
-			scanf("%d",&A1);
+			scanf("%d",&A);
 			printf("Escriba el segundo valor \n");
-			scanf("%d",&B1);
+			scanf("%d",&B);
 			printf("Escriba el tercer valor \n");
-			scanf("%d",&C1);
+			scanf("%d",&C);
 				
-			if(A1+B1==C1){
-				printf("La suma de %d mas %d es igual a %d ",A1,B1,C1);
-			}else if(B1+C1==A1){
-				printf("La suma de %d mas %d es igual a %d ",B1,C1,A1);
-			}else if(A1+C1==B1){
-				printf("La suma de %d mas %d es igual a %d ",A1,C1,B1);
+			if(A+B==C){
+				printf("La suma de %d mas %d es igual a %d ",A,B,C);
+			}else if(B+C==A){
+				printf("La suma de %d mas %d es igual a %d ",B,C,A);
+			}else if(A+C==B){
+				printf("La suma de %d mas %d es igual a %d ",A,C,B);
 			}else {
 				printf("La suma de dos numeros no es como resultando el tercero.");
 			}
 	
 	break;
 	
-	case 7:
-		int cuadrado,suma,cuenta=1;
- 	 
- 	 while (cuenta<101){
+	case 3:
+		
+				printf("cuantos terminos de fibonnacci \n");
+		scanf("%d",&n);
+			A=0;
+			B=1;
+			printf("%d\n%d\n",A,B); 
+	
+		for(i=3;i<=n; i++){
+			C=A+B;
+			printf("%d\n",C);
+      
+	 		 A=B;
+	 	 	B=C;
+		 }
+	break;
+	
+	case 4:
+	
+	for(cont=1;cont<=1000;cont++){
+	l++;
+	printf("%d ",l);
+	
+		while(cont==20){
+		 printf("\nContinuar S/N \n");
+		 scanf(" %c",&resp);
+		if (resp == 's')
+		{
+		cont=0;
+	
+		} else if(resp=='n'){
+			printf("el programa a finalizado ");
+		return 0;
+		}
+	}
+		 
+		 }
+		
+	
+	break;
+
+ 	case 5:
+ 		
+		S=0;
+		cont=0;
+
+	 do   {	
+		printf("ingrese un numero (con 0 termina)\n");
+		scanf("%d",&n);
+	if(n != 0){
+		S+=n;
+		cont++;
+	}
+	
+		
+		
+	}	while(n != 0);
+		if(cont>0){
+		prom=(float)S/cont;
+
+		printf("la media es %f ",prom);
+	}
+ 		
+ 	break;
+	  
+ 	case 6:
+	
+	for(i=1;i<=200;i++){
+		if(i%2 ==0){
+			sumaP=sumaP+i;
+			conteoP++;
+		}	
+			else {
+				sumaI=sumaI+i;
+				conteoI++;	
+			}
+	}
+	
+	mediaI=sumaI/conteoI;
+	mediaP=sumaP/conteoI;
+	
+	printf("la suma de los pares es %d \n",sumaP);
+	printf("la media de los pares es %d \n",mediaP);
+	printf("la suma de los impares es %d \n",sumaI);
+	printf("la media de los impares es %d \n",mediaI);
+	 
+	break;	
+			
+	case 7:	
+	while (cuenta<101){
  	 	cuadrado=cuenta*cuenta;
- 	 	suma+=cuadrado;
+ 	 	S+=cuadrado;
  	 	printf("%d %d \n",cuenta,cuadrado);	
 		cuenta++;
 	  }
- 			printf("%d \n",suma);
- 	return 0;
- 		
- 		
- 			
- 		
-	 } 
- 		
- 			
-			 
- 			
+ 			printf("%d \n",S);
+	break;		
 
-return 0;
+	case 8:
+	S=0;
+	i=1;
+	for(i=1;i<=10;i++){
+		printf("ingrese un numero \n");
+		scanf("%d",&n);
+	
+		if(n<0){
+			S=S+n;
+			
+		}
+	}
+	
+	
+	printf("la suma de los numeros negativos es %d ",S);
+	break;
+ 	
+ 	case 9:
+ 		printf("Fin del programa");
+ 		v=0;
+ 	break;
  }
+}while(v!= 0);
+ 	
+return 0;
+
+}
