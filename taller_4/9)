@@ -19,7 +19,7 @@
  						printf("5 Media de numeros \n ");
  							printf("6 Suma y Media de numeros pares e imapres \n ");
  								printf("7 cuadrado de los primeros 100 numeros enteros\n ");
- 									printf("8 Programa para identificar numeros negativos \n ");
+ 									printf("8 Programa para sumar numeros negativos \n ");
  										printf("9 para finalizar\n ");
  	scanf("%d",&num);
  	
