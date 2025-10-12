@@ -1,0 +1,191 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+ int main(){
+ 	int num;
+ 	
+ 	printf("escriba");
+ 	scanf("%d",&num);
+ 	
+ 	switch (num){
+ 		case 1:
+ 			int A, B, C;
+			printf("Escriba el primer numero: \n");
+			scanf("%d",&A);
+			printf("Escriba el segundo numero: \n");
+			scanf("%d",&B);
+			printf("Escriba el tercer numero: \n");
+			scanf("%d",&C);
+	
+				if((A>B&&B>C)||(A<B&&B<C)){
+					printf("El numero del medio es %d",B);
+					
+			} else if ((B>C&&C>A)||(B<C&&C<A)){
+					printf("El numero del medio es %d",C);	
+						
+			}else if((C>A&&A>B)||(C<A&&A<B)){
+					printf("El numero del medio es %d",A);
+					
+				} else {
+						printf("Dos numeros ingresados son iguales");
+			}
+			break;
+ 			
+ 		case 2:	
+ 		
+			int A1, B1, C1, S1;
+			
+			printf("Escriba el primer valor \n");
+			scanf("%d",&A1);
+			printf("Escriba el segundo valor \n");
+			scanf("%d",&B1);
+			printf("Escriba el tercer valor \n");
+			scanf("%d",&C1);
+				
+			if(A1+B1==C1){
+				printf("La suma de %d mas %d es igual a %d ",A1,B1,C1);
+			}else if(B1+C1==A1){
+				printf("La suma de %d mas %d es igual a %d ",B1,C1,A1);
+			}else if(A1+C1==B1){
+				printf("La suma de %d mas %d es igual a %d ",A1,C1,B1);
+			}else {
+				printf("La suma de dos numeros no es como resultando el tercero.");
+			}
+	
+	break;
+	case 3:
+		int n,l,a,b,c;
+	
+	printf("cuantos terminos de fibonnacci \n");
+	scanf("%d",&n);
+	a=0;
+	b=1;
+	printf("%d\n%d\n",a,b); 
+	
+	for(l=3;l<=n; l++){
+		c=a+b;
+		printf("%d\n",c);
+      
+	 	 a=b;
+	  	b=c;
+	}
+	break;
+	
+	case 4:
+		int i,cont;
+	char resp;
+
+	for(cont=1;cont<=100;cont++){
+	i++;
+	 printf("%d ",i);
+		while(cont==20){
+		 printf("\nContinuar S/N \n");
+		 scanf(" %c",&resp);
+		if (resp == 's')
+		{
+		cont=0;
+	
+		} else if(resp=='n'){
+			printf("el programa a finalizado ");
+		return 0;
+		}
+		}
+		 
+	 }
+		
+	break;
+	
+	case 5:
+		int sum,con,N1;
+	float prom;
+	sum=0;
+	con=0;
+
+ do   {	
+	printf("ingrese un numero (con 0 termina)\n");
+		scanf("%d",&N1);
+	if(N1 != 0){
+		sum+=N1;
+		con++;
+	}
+	
+		
+		
+	}	while(N1 != 0);
+	if(con>0){
+		prom=(float)sum/con;
+
+		printf("la media es %f ",prom);
+	}
+	
+	
+	break;
+	
+	case 6:
+		
+	int sumaP=0, sumaI=0, conteoP=0, conteoI=0, mediaI,mediaP,j;
+	for(j=1;j<=200;j++){
+		if(i%2 ==0){
+			sumaP=sumaP+j;
+			conteoP++;
+		}	
+			else {
+				sumaI=sumaI+j;
+				conteoI++;	
+			}
+	}
+	
+	mediaI=sumaI/conteoI;
+	mediaP=sumaP/conteoI;
+	
+	printf("la suma de los pares es %d \n",sumaP);
+	printf("la media de los pares es %d \n",mediaP);
+	printf("la suma de los impares es %d \n",sumaI);
+	printf("la media de los impares es %d \n",mediaI);
+	
+		
+	break;
+	
+	case 7:
+		int cuadrado,suma,cuenta=1;
+ 	 
+ 	 while (cuenta<101){
+ 	 	cuadrado=cuenta*cuenta;
+ 	 	suma+=cuadrado;
+ 	 	printf("%d %d \n",cuenta,cuadrado);	
+		cuenta++;
+	  }
+ 			printf("%d \n",suma);
+ 
+ 	case 8:
+ 	
+ 	int main (){	
+	int i,num,sumaN;
+	sumaN=0;
+	i=1;
+	for(i=1;i<=10;i++){
+		printf("ingrese un numero \n");
+		scanf("%d",&num);
+	
+		if(num<0){
+			sumaN=sumaN+num;
+			
+		}
+	}
+	
+	
+	printf("la suma de los numeros negativos es %d ",sumaN);
+
+ 	
+ 	break;
+ 		
+ 			
+ 		
+	  
+ 		
+ 			
+			 
+ 			
+
+return 0;
+ }
