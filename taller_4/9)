@@ -12,15 +12,15 @@
 	do{
 	
  	printf("\n	Escriba el algoritmo que requiere \n ");
- 		printf("1 Valor del centro\n ");
- 			printf("2 Suma de dos numeros como redultado un tercero \n ");
- 				printf("3 Serie de fibonnacci\n ");
- 					printf("4 Numeros del 1 al 1000 (mostrados de 20 a 20)\n ");
- 						printf("5 Media de numeros \n ");
- 							printf("6 Suma y Media de numeros pares e imapres \n ");
- 								printf("7 cuadrado de los primeros 100 numeros enteros\n ");
- 									printf("8 Programa para sumar numeros negativos \n ");
- 										printf("9 para finalizar\n ");
+ 	printf("1 Valor del centro\n ");
+ 	printf("2 Suma de dos numeros como redultado un tercero \n ");
+ 	printf("3 Serie de fibonnacci\n ");
+ 	printf("4 Numeros del 1 al 1000 (mostrados de 20 a 20)\n ");
+ 	printf("5 Media de numeros \n ");
+ 	printf("6 Suma y Media de numeros pares e imapres \n ");
+ 	printf("7 cuadrado de los primeros 100 numeros enteros\n ");
+ 	printf("8 Programa para sumar numeros negativos \n ");
+ 	printf("9 para finalizar\n ");
  	scanf("%d",&num);
  	
  	switch (num){
@@ -92,45 +92,36 @@
 	printf("%d ",l);
 	
 		while(cont==20){
-		 printf("\nContinuar S/N \n");
-		 scanf(" %c",&resp);
-		if (resp == 's')
-		{
-		cont=0;
-	
-		} else if(resp=='n'){
+			 printf("\nContinuar S/N \n");
+			 scanf(" %c",&resp);
+			if (resp == 's'){
+				cont=0;
+			} else if(resp=='n'){
 			printf("el programa a finalizado ");
-		return 0;
+			return 0;
+			}
 		}
-	}
 		 
-		 }
-		
-	
+	}
 	break;
 
  	case 5:
  		
-		S=0;
-		cont=0;
+	S=0;
+	cont=0;
 
-	 do   {	
+	 do{	
 		printf("ingrese un numero (con 0 termina)\n");
-		scanf("%d",&n);
-	if(n != 0){
-		S+=n;
-		cont++;
-	}
-	
-		
-		
-	}	while(n != 0);
+			scanf("%d",&n);
+			if(n != 0){
+				S+=n;
+				cont++;
+			}
+	}while(n != 0);
 		if(cont>0){
-		prom=(float)S/cont;
-
-		printf("la media es %f ",prom);
-	}
- 		
+			prom=(float)S/cont;
+			printf("la media es %f ",prom);
+		}	
  	break;
 	  
  	case 6:
@@ -140,10 +131,10 @@
 			sumaP=sumaP+i;
 			conteoP++;
 		}	
-			else {
-				sumaI=sumaI+i;
-				conteoI++;	
-			}
+		else {
+			sumaI=sumaI+i;
+			conteoI++;	
+		}
 	}
 	
 	mediaI=sumaI/conteoI;
@@ -162,8 +153,8 @@
  	 	S+=cuadrado;
  	 	printf("%d %d \n",cuenta,cuadrado);	
 		cuenta++;
-	  }
- 			printf("%d \n",S);
+	}
+ 	printf("%d \n",S);
 	break;		
 
 	case 8:
@@ -178,18 +169,15 @@
 			
 		}
 	}
-	
-	
 	printf("la suma de los numeros negativos es %d ",S);
 	break;
  	
  	case 9:
- 		printf("Fin del programa");
- 		v=0;
- 	break;
- }
-}while(v!= 0);
+ 	printf("Fin del programa");
+ 	v=0;
+ 		break;
+	 }
+	}while(v!= 0);
  	
-return 0;
-
-}
+	return 0;
+	}
