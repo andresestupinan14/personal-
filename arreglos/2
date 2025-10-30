@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main(){
+	char resp;
+	do{
+	int i,S,suma=0;	
+	
+		printf("Escriba la cantidad de elementos de los vectores: ");
+		scanf("%d",&S);
+	
+	int V1[S];
+	int V2[S];
+	int V3[S];
+
+		for(i=0;i<S;i++){
+			printf("\nDigite los elementos del primer vector:\n");
+			scanf("%d",&V1[i]);
+		}for(i=0;i<S;i++){
+			printf("%d|",V1[i]);
+		}for(i=0;i<S;i++){
+			printf("\nDigite los elementos del segundo vector:\n");
+			scanf("%d",&V2[i]);
+		}for(i=0;i<S;i++){
+			printf("%d|",V2[i]);
+		}
+		
+
+	
+		printf("\nLos elementos del tercer vector son:\n");
+		
+		for(i=0;i<S;i++){
+		V3[i]=V1[i]+V2[i];
+		printf("%d|",V3[i]);
+		}
+	
+	printf("\nvolver a ejecutar programa (S/s)\n ");
+	scanf(" %c",&resp);
+	}while(resp=='s'||resp=='S');
+	printf("\nprograma finalizado");
+}
