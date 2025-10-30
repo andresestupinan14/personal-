@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(){
+	int N,i;
+	char resp;
+	do{
+	
+	printf("Cuantos elementos quiere en el vector ");
+	scanf("%d",&N);
+	int cont=0;
+	int V[N];
+	
+	
+	
+	for(i=0;i<N;i++){
+		cont++;
+		printf("\nEscriba el valor en la posicion %d \n",cont);
+		scanf("%d",&V[i]);
+		
+		if(V[i]%2!=0){
+			printf("El numero no es par, volver a escribir el elemento del vector");
+			cont=cont-1;
+			i=i-1;
+		}
+	}for(i=0;i<N;i++){
+		printf("%d|",V[i]);
+	}
+	printf("\nrepetir (S/s)\n");
+	scanf(" %c",&resp);
+	}while(resp=='s'||resp=='S');
+	printf("programa finalizado");
+	
+
+}
