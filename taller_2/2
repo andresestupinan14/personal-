@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int suma=0, A=1;
+	while(A<=10)
+		{suma=suma+A;
+		 A=A+1;
+	}
+		
+	
+
+	{	
+		printf("el valor final es %d",suma);}
+
+
+
+
+}	
