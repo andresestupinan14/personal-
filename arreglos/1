@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main(){
+	
+	char resp;
+	do {
+	int i,S,suma=0;
+	int cont=0;
+	float prom;
+	printf("Ingrese la canidad de elementos del vector: ");
+	scanf("%d",&S);
+	
+	int V[S];
+	
+	for(i=0;i<S;i++){
+		printf("\nEscriba el elemento del vector:\n");
+		scanf("%d",&V[i]);
+		
+	}for(i=0;i<S;i++){
+		printf("%d|",V[i]);
+		
+	}for(i=0;i<S;i++){
+		suma=suma+V[i];
+		cont++;
+		
+	}for(i=0;i<S;i++){
+		prom=(float)suma/cont;
+	}
+	printf("\nLa suma de los elementos del vector es %d\n",suma);
+		
+	printf("El promedio de los elementos del vector es: %.2f",prom);
+	
+	printf("\nrepetir el programa s/n\n");
+	scanf(" %c",&resp);
+	
+
+	}while(resp == 's' || resp == 'S');
+	 
+	printf("Programa finalizado");
+}
