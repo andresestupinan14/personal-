@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int N1,N2,suma,resta,mlti;
+	float divi;
+	printf("escriba el valor del primer numero");
+	scanf("%d",&N1);
+	printf("escriba el valor del segundo numero");
+	scanf("%d",&N2);
+		suma=N1+N2;
+
+		resta=N1-N2;
+
+		mlti=N1*N2;
+	
+	printf("el valor de la suma es %d\n",suma);
+	printf("el valor de la resta es %d\n",resta);
+	printf("el valor de la multiplicacion es %d\n",mlti);
+	
+		if (N2==0){
+			printf("no es posible la division");
+		}  else {
+			divi= (float) N1/N2;	
+			printf("el valor de la division %.2f\n",divi);}
+
+return 0;
+
+}
