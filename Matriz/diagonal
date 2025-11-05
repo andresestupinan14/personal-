@@ -1,0 +1,46 @@
+#include<stdio.h>
+
+int main(){
+	int N;
+	printf("Ingrese el tamaño de la matriz");
+	scanf("%d",&N);
+	
+	int i,j;
+	int M[N][N];
+	
+	for(i=0;i<N;i++){
+		for(j=0;j<N;j++){
+			printf("Escriba el valor de la matriz");
+			scanf("%d",&M[i][j]);	
+		}
+	}	
+
+
+	for(i=0;i<N;i++){
+		for(j=0;j<N;j++){
+			printf("|%d",M[i][j]);
+			
+		}printf("|\n");
+	}	
+	
+	printf("\n");
+	for(i=0;i<N;i++){
+		for(j=0;j<N;j++){
+			if (i==j){
+				M[i][j]=0;
+			}
+			printf("|%d",M[i][j]);
+			
+		}printf("|\n");
+	}	
+	
+	printf("\n");
+	for(i=0;i<N;i++){
+		for(j=0;j<N;j++){
+				M[j][i]=M[i][j]+M[j][i];
+				if(i<j){
+					M[i][j]=0;
+				}printf("|%d",M[i][j]);
+			}printf("|\n");	
+		}
+	}	
